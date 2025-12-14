@@ -1,0 +1,223 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EnglishAI - Project</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+   <body class="main-bg" id="home">
+    <!-- גוף העמוד הראשי, כולל מחלקת עיצוב ורפרנס לניווט פנימי -->
+
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <!-- תפריט ניווט עליון קבוע  -->
+        <div class="container">
+            <!-- לוגו עם קישור לראש העמוד -->
+            <a class="navbar-brand fw-bold logo-circle" href="#home">EAI</a>
+
+            <!-- כפתור תפריט המבורגר למסכים קטנים -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- אזור הקישורים שנפתח ונסגר במסכים קטנים -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav nav-left">
+                    <!-- קישורים לחלקים שונים בעמוד -->
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#techniques">Techniques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personal-info">Personal Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- אזור כותרת ראשי -->
+    <header class="text-center mt-5 container">
+        <!-- שם הפרויקט -->
+        <h1 class="title-main">EnglishAI</h1>
+
+        <!-- כותרת משנה -->
+        <p class="subtitle-main">When English meets AI</p>
+
+        <!-- תמונה  -->
+        <img src="assets/Hero.png" class="header-img" alt="Hero Illustration">
+
+        <!-- אזור חיפוש לסינון טכניקות -->
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="form-control search-input"
+                   placeholder="Start typing to find an AI technique to learn English">
+        </div>
+    </header>
+
+    <!-- אזור הצגת טכניקות הלמידה -->
+    <section class="container mt-5" id="techniques">
+        <div class="row g-5 justify-content-center" id="cardsContainer">
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/conversation.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">Conversation Practice</h5>
+                        <p>Practice real-life English conversations with AI and build speaking confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/grammar.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">Grammar Fix & Explanation</h5>
+                        <p>Get your sentences corrected with simple, clear explanations you can learn from.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/vocab.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">Vocabulary Builder</h5>
+                        <p>Learn new words through examples, topics, and personalized practice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/quiz.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">AI-Generated Quizzes</h5>
+                        <p>Get quick quizzes created just for you to test reading, grammar, or vocabulary.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/mic.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">Pronunciation Coach</h5>
+                        <p>Record yourself and receive instant feedback to improve clarity and accent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/write.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title">Writing Assistant</h5>
+                        <p>Improve emails, messages, and essays with better structure, tone, and vocabulary.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- כרטיסיית טכניקת למידה -->
+            <div class="col-lg-4 col-md-6 content-unit">
+                <div class="custom-card">
+                    <div class="card-icon-area">
+                        <img src="assets/icons/men.png" class="icon" alt="icon">
+                    </div>
+                    <div class="card-content-area">
+                        <h5 class="card-title"> Real-Life Role-Play</h5>
+                        <p>Practice everyday English situations like interviews, restaurants, or travel using
+                            interactive role-plays.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- הודעה שמוצגת כאשר אין תוצאות חיפוש -->
+        <p id="noResultsMessage">No matching techniques were found.</p>
+    </section>
+
+    <!-- קו מפריד בין אזורים -->
+    <hr class="pink-divider">
+
+    <!-- אזור טופס איסוף נתוני לומד -->
+    <section class="container" id="personal-info">
+        <div class="lms-form-section">
+            <h3 class="text-center mb-4 lms-form-title">We want to get to know you better!</h3>
+
+            <!-- טופס שליחת נתונים ל-LMS -->
+            <form id="lmsForm" onsubmit="validateForm(event)" novalidate>
+                <!-- שדה שם -->
+                <div class="mb-3">
+                    <label for="studentName" class="form-label">What's your name?</label>
+                    <input type="text" class="form-control" id="studentName" required>
+                    <div class="error-message" id="studentNameError">This field is required.</div>
+                </div>
+
+                <!-- שדה בחירת כיתה -->
+                <div class="mb-3">
+                    <label for="interestLevel" class="form-label">What's your grade?</label>
+                    <select class="form-select" id="interestLevel">
+                        <option value="7th">7th</option>
+                        <option value="8th">8th</option>
+                        <option value="9th">9th</option>
+                        <option value="10th">10th</option>
+                        <option value="11th">11th</option>
+                        <option value="12th">12th</option>
+                    </select>
+                </div>
+
+                <!-- שדה טקסט פתוח למוטיבציה -->
+                <div class="mb-3">
+                    <label for="motivaion" class="form-label">Share your motivaion to learn english</label>
+                    <textarea class="form-control" id="motivation" rows="3" required></textarea>
+                    <div class="error-message" id="motivationError">This field is required.</div>
+                </div>
+
+                <!-- כפתור שליחת הטופס -->
+                <button type="submit" class="btn btn-submit">Submit </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- אזור הצגת הודעות חיווי למשתמש -->
+    <div id="formFeedback" class="feedback-toast"></div>
+
+    <!-- טעינת ספריית SCORM לתקשורת עם ה-LMS -->
+    <script src="SCORM_API_wrapper.js"></script>
+
+    <!-- טעינת קובץ ה-JavaScript הראשי של הפרויקט -->
+    <script src="js/main.js"></script>
+
+    <!-- טעינת ספריית Bootstrap (כולל JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+    </html>

@@ -1,0 +1,429 @@
+/* ============================
+   משתני צבע כלליים לפרויקט
+   הגדרת  פלטת צבעים ראשית
+============================ */
+:root {
+    --pink-light: #FFE6E6;
+    --pink-mid: #FFBEBE;
+    --dark-bg: #2C2A2A;
+    --card-dark: #2C2A2A;
+}
+
+/* עיצוב פונט לכלל האתר  */
+body {
+    font-family: 'Jersey 20', sans-serif;
+    padding-top: 80px;
+
+}
+
+/* רקע וצבע טקסט לעמוד הראשי */
+body.main-bg {
+    background-color: var(--dark-bg);
+    color: var(--pink-light);
+}
+
+/* עיצוב סרגל הניווט העליון */
+.custom-navbar {
+    background-color: var(--pink-light);
+}
+
+/* עיצוב קישורים ולוגו בסרגל הניווט */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: var(--dark-bg) !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* ריווח בין פריטי הניווט */
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* עיצוב הלוגו העגול בניווט */
+.logo-circle {
+    background-color: var(--pink-mid);
+    color: var(--dark-bg) !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* עיצוב כותרת ראשית */
+.title-main {
+    font-size: 6rem;
+}
+
+/* עיצוב כותרת משנה */
+.subtitle-main {
+    margin-top: -20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* עיצוב תמונת ה-Hero */
+.header-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* עיצוב שדה החיפוש */
+.search-input {
+    border-radius: 40px;
+    padding: 12px 25px;
+    background-color: var(--pink-light);
+    border: none;
+    flex-grow: 1;
+    font-size: 1.4rem;
+}
+
+/* עיצוב טקסט placeholder בשדה החיפוש */
+.search-input::placeholder {
+    color: var(--dark-bg);
+    opacity: 0.7;
+}
+
+/* ============================
+   עיצוב כרטיסיות התוכן
+============================ */
+.custom-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 460px;
+    margin: 0 auto;
+    border: 12px solid var(--pink-light);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform .2s ease;
+    background-color: var(--pink-light);
+    display: flex;
+    flex-direction: column;
+}
+
+/* אפקט הובר על כרטיס */
+.custom-card:hover {
+    transform: translateY(-8px);
+}
+
+/* אזור האייקון בכרטיס */
+.card-icon-area {
+    background-color: var(--pink-light);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* עיצוב האייקונים */
+.icon {
+    width: 115px;
+    height: 115px;
+}
+
+/* אזור התוכן הטקסטואלי בכרטיס */
+.card-content-area {
+    background-color: var(--card-dark);
+    padding: 25px;
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* עיצוב כותרות בכרטיסים */
+.card-content-area h5 {
+    color: var(--pink-mid);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+/* עיצוב טקסט תיאורי בכרטיסים */
+.card-content-area p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    opacity: 0.9;
+}
+
+/* ============================
+   עיצוב טופס LMS
+============================ */
+.lms-form-section {
+    border-radius: 20px;
+    padding: 40px;
+    border: 4px solid var(--pink-mid);
+    max-width: 500px;
+    margin: 80px auto 50px;
+}
+
+/* עיצוב תוויות שדות בטופס */
+.form-label {
+    color: var(--pink-mid);
+    font-size: 1.5rem;
+}
+
+/* עיצוב כפתור שליחה */
+.btn-submit {
+    background-color: var(--pink-light);
+    color: var(--dark-bg);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* ============================
+   עיצוב ניווט פנימי
+============================ */
+.nav-left {
+    margin-left: 20px;
+}
+
+/* עיצוב פריטי הניווט */
+.nav-left .nav-item {
+    position: relative;
+    padding: 0 20px;
+}
+
+/* קו מפריד בין פריטי ניווט */
+.nav-left .nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: var(--dark-bg);
+}
+
+/* ============================
+   מבנה כללי וגלילה
+============================ */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-wrapper {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+/* קו מפריד בין אזורים */
+.pink-divider {
+    border: none;
+    height: 4px;
+    background-color: var(--pink-mid);
+    width: 80%;
+    margin: 80px auto;
+    border-radius: 10px;
+    opacity: 100;
+}
+
+/* ============================
+   טיפול בשגיאות בטופס
+============================ */
+input:invalid {
+    box-shadow: none;
+}
+
+input:invalid:focus {
+    outline: 3px solid var(--pink-mid);
+}
+
+.error {
+    border: 2px solid #ff6b6b !important;
+}
+
+.error-message {
+    display: none;
+    color: #ff6b6b;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* הודעה כאשר אין תוצאות חיפוש */
+#noResultsMessage {
+    display: none;
+    text-align: center;
+    color: #FFBEBE;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* ============================
+   הודעות חיווי (Toast)
+============================ */
+.feedback-toast {
+    visibility: hidden;
+    min-width: 240px;
+    background-color: var(--pink-light);
+    color: var(--dark-bg);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 18px;
+    position: fixed;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    border: 2px solid var(--pink-mid);
+    box-shadow: 0px 3px 12px rgba(255, 190, 190, 0.35);
+    opacity: 0;
+    transition: opacity 0.4s ease, bottom 0.4s ease;
+    z-index: 1050;
+}
+
+/* מצב מוצג של הודעת חיווי */
+.feedback-toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 55px;
+}
+
+/* עיצוב הודעת שגיאה */
+.feedback-toast.error-toast {
+    background-color: #FFBEBE;
+    border-color: var(--pink-light);
+    color: var(--dark-bg);
+    box-shadow: 0px 4px 15px rgba(255, 150, 150, 0.45);
+}
+
+/* שמירה על מראה אחיד לכפתור שליחה במצבי אינטראקציה */
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active {
+    background-color: var(--pink-light) !important;
+    color: var(--dark-bg) !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* כותרת אזור הטופס */
+.lms-form-title {
+    color: var(--pink-light);
+}
+
+/* =========================================
+   התאמות רספונסיביות למובייל
+========================================= */
+@media only screen and (max-width: 600px) {
+
+    /* מניעת גלילה אופקית במובייל */
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    /* התאמת רוחב וריווח של קונטיינרים */
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* ביטול קווים מפרידים בניווט */
+    .nav-left .nav-item::after {
+        display: none !important;
+    }
+
+    /* סידור ניווט אנכי במובייל */
+    .nav-left {
+        margin-left: 0;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-left .nav-item {
+        border-bottom: 1px solid rgba(255, 230, 230, 0.1);
+        padding: 10px 0;
+    }
+
+    /* התאמות טקסטים למסכים קטנים */
+    .title-main {
+        font-size: 4rem;
+    }
+
+    .subtitle-main {
+        font-size: 1.8rem;
+    }
+
+    .search-input {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* התאמות טופס במובייל */
+    .lms-form-section h3 {
+        font-size: 1.5rem !important;
+        margin-bottom: 20px;
+    }
+
+    .lms-form-section .form-label {
+        font-size: 1.2rem !important;
+        margin-bottom: 8px;
+    }
+
+    .custom-card {
+        width: 80%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .lms-form-section {
+        width: 95%;
+        margin: 40px auto;
+        padding: 25px;
+    }
+}
+
+/* התאמות למסכים בינוניים (טאבלטים) */
+@media (max-width: 991.98px) {
+
+    /* ביטול קווים מפרידים בניווט */
+    .nav-left .nav-item::after {
+        display: none;
+    }
+
+    /* סידור ניווט מותאם לטאבלט */
+    .nav-left {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .nav-left .nav-item {
+        padding: 10px 0;
+    }
+
+    .nav-left .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

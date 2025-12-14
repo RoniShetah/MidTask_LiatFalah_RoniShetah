@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="EnglishAI_SCORM12" version="1.0"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+    http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <!-- Metadata -->
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+
+  <!-- Course structure -->
+  <organizations default="org1">
+    <organization identifier="org1">
+      <title>EnglishAI – When English meets AI</title>
+      <item identifier="item1" identifierref="resource1" isvisible="true">
+        <title>AI Techniques for Learning English</title>
+      </item>
+    </organization>
+  </organizations>
+
+  <!-- Resources -->
+  <resources>
+    <resource
+      identifier="resource1"
+      type="webcontent"
+      adlcp:scormType="sco"
+      href="index.html">
+
+      <file href="index.html"/>
+      <file href="SCORM_API_wrapper.js"/>
+
+      <file href="js/main.js"/>
+
+      <file href="css/style.css"/>
+      <file href="css/bootstrap.rtl.min.css"/>
+
+      <file href="assets/Hero.png"/>
+
+      <file href="assets/icons/conversation.png"/>
+      <file href="assets/icons/grammar.png"/>
+      <file href="assets/icons/men.png"/>
+      <file href="assets/icons/mic.png"/>
+      <file href="assets/icons/quiz.png"/>
+      <file href="assets/icons/vocab.png"/>
+      <file href="assets/icons/write.png"/>
+
+    </resource>
+  </resources>
+
+</manifest>
